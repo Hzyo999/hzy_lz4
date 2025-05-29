@@ -4,7 +4,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 
-#define BLOCK_SIZE (1<<16)
+#define BLOCK_SIZE (1<<12)
 
 // offset: 40bit (~1TB)
 // size: 12bit (~4KB)

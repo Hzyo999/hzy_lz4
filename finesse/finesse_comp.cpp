@@ -44,7 +44,8 @@ int main(int argc, char* argv[]) {
 
 		dedup[h] = i;
 
-		int comp_self = LZ4_compress_default(f.trace[i], compressed, BLOCK_SIZE, 2 * BLOCK_SIZE);
+		//int comp_self = LZ4_compress_default(f.trace[i], compressed, BLOCK_SIZE, 2 * BLOCK_SIZE);
+		total += LZ4_compress_default(f.trace[i], compressed, BLOCK_SIZE, 2 * BLOCK_SIZE);
 		int dcomp_lsh = INF, dcomp_lsh_ref;
 		dcomp_lsh_ref = lsh.request((unsigned char*)f.trace[i]);
         if (dcomp_lsh_ref != -1) {

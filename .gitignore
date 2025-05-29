@@ -1,0 +1,9 @@
+# 忽略特定的大文件
+lz4_predictor/250526osdb_matchlen.txt
+lz4_predictor/250526nci_matchlen.txt
+
+# 忽略特定目录中的所有文件
+# lz4_predictor/
+
+# 忽略特定类型的文件
+*.txt
